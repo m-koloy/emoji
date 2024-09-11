@@ -6,8 +6,6 @@ emojis:
     src: https://raw.githubusercontent.com/rovell/emoji/main/aa.png
   - name: alarm.gif
     src: https://raw.githubusercontent.com/rovell/emoji/main/alarm.gif
-  - name: animals.yaml
-    src: https://raw.githubusercontent.com/rovell/emoji/main/animals.yaml
   - name: atfinnfly.gif
     src: https://raw.githubusercontent.com/rovell/emoji/main/atfinnfly.gif
   - name: b.png
