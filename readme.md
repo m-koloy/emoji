@@ -4,6 +4,19 @@ Rocket.Chat Пользовательский импортер эмодзи
 
 Этот репозиторий содержит Node.js скрипт для импорта пользовательских эмодзи из YAML-файла в  Rocket.Chat. Скрипт использует Rocket.Chat API, упрощающий массовый импорт пользовательских эмодзи без прямого доступа к базе данных. Он также поддерживает использование файла `.env` файл с Rocket.Chat сервер URL, логином и паролем администратора.
 
+Инстуркция 
+--------
+
+1.git clone https://github.com/koloy910/emoji.git - установка скрипта  
+2.cd rocketchat-emoji-bulk-upload - переход в папку со скриптом
+3.npm install - установка зависимости
+4.Добавить значения в папку .env
+ROCKETCHAT_SERVER_URL=https://your-rocketchat-server-url 
+ADMIN_USERNAME=your-admin-username
+ADMIN_PASSWORD=your-admin-password
+4.node import-custom-emojis.js - запуск скрипта
+5. https://raw.githubusercontent.com/koloy910/emoji/refs/heads/main/School21.yaml - указать URL файла yaml с ссылками на эмодзи и названиями 
+
 Особенности
 --------
 
@@ -165,11 +178,4 @@ Emoji packs from [slackmojis.com](http://www.slackmojis.com)
 ----------
 Данный скрипт Вы используйте  на свой страх и риск. Всегда делайте резервную копию своих данных, прежде чем вносить какие-либо изменения в свой Rocket.Chat сервер.
 
-git clone https://github.com/anefzaoui/rocketchat-emoji-bulk-upload.git - установка скрипта  
-cd rocketchat-emoji-bulk-upload - переход в папку со скриптом
-npm install - установка зависимости
-ROCKETCHAT_SERVER_URL=https://your-rocketchat-server-url 
-ADMIN_USERNAME=your-admin-username
-ADMIN_PASSWORD=your-admin-password
-в папку .env
-node import-custom-emojis.js - запуск скрипта
+
