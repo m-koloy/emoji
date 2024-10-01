@@ -1,83 +1,75 @@
-git clone https://github.com/anefzaoui/rocketchat-emoji-bulk-upload.git - установка скрипта  
-cd rocketchat-emoji-bulk-upload - переход в папку со скриптом
-npm install - установка зависимости
-ROCKETCHAT_SERVER_URL=https://your-rocketchat-server-url 
-ADMIN_USERNAME=your-admin-username
-ADMIN_PASSWORD=your-admin-password
-в папку .env
-node import-custom-emojis.js - запуск скрипта
 =================================
-Rocket.Chat Custom Emoji Importer
+Rocket.Chat Пользовательский импортер эмодзи
 =================================
 
-This repository contains a Node.js script to import custom emojis from a YAML file into a Rocket.Chat instance. The script uses the Rocket.Chat API, making it easy to bulk import custom emojis without directly accessing the database. It also supports using a `.env` file to store the Rocket.Chat server URL, admin username, and password.
+Этот репозиторий содержит Node.js скрипт для импорта пользовательских эмодзи из YAML-файла в  Rocket.Chat. Скрипт использует Rocket.Chat API, упрощающий массовый импорт пользовательских эмодзи без прямого доступа к базе данных. Он также поддерживает использование файла `.env` файл с Rocket.Chat сервер URL, логином и паролем администратора.
 
-Features
+Особенности
 --------
 
-*   Import custom emojis from a remote YAML file
+*   Импорт пользовательских эмодзи из удаленного YAML-файла
     
-    The script allows you to easily import custom emojis from a remote YAML file by providing the file's URL. The YAML file should contain the emoji names and image sources in a well-structured format.
+    Скрипт позволяет легко импортировать пользовательские эмодзи из удаленного файла YAML, указав URL-адрес файла. Файл YAML должен содержать названия эмодзи и источники изображений в хорошо структурированном формате.
     
 *   Uses the Rocket.Chat API for easy and secure integration
     
     This script interacts with your Rocket.Chat server using the official API, ensuring a secure and straightforward integration process. You will need to provide your admin username and password to authenticate with the API.
     
-*   Command-line interface for user input
+*   Использует Rocket.Chat-API для простой и безопасной интеграции
     
-    The script uses a simple command-line interface to gather required information, such as the YAML file URL, Rocket.Chat server URL, and admin credentials, making it easy to run and configure.
+    Скрипт использует простой интерфейс командной строки для сбора необходимой информации, такой как URL-адрес файла YAML, Rocket.Chat URL-адрес и учетные данные администратора, что упрощает его запуск и настройку.
     
-*   Automatic download and upload of custom emoji images
+*   Автоматическая загрузка пользовательских изображений с эмодзи
     
-    The script takes care of downloading the custom emoji images from the URLs specified in the YAML file and uploading them to your Rocket.Chat server. This automated process simplifies the bulk import of custom emojis.
+    Скрипт загружает пользовательские изображения эмодзи с URL-адресов, указанных в файле YAML, и загружает их на ваш Rocket.Чат-сервер. Этот автоматизированный процесс упрощает массовый импорт пользовательских эмодзи.
     
-*   Bulk import support
+*   Поддержка массового импорта
     
-    This script is designed to handle multiple custom emojis at once, allowing you to import a large number of emojis in a single run, saving you time and effort.
+    Этот скрипт предназначен для одновременной обработки нескольких пользовательских смайликов, что позволяет вам импортировать большое количество смайликов за один запуск, экономя ваше время и усилия.
     
-*   Support for `.env` file to store server URL and admin credentials
+*   Использование файла `.env` для хранения URL сервера и учетных данных администратора
     
-    You can create a `.env` file in the project folder to store your Rocket.Chat server URL, admin username, and password. This helps to keep your credentials secure and simplifies running the script, as you won't need to input these values manually each time.
+    Вы можете создать файл `.env` в папке project для вашего Rocket.chat - сервер чата, имя и пароль администратора. Это поможет сохранить ваши учетные данные в безопасности и упростит запуск скрипта, так как вам не нужно будет каждый раз вводить эти значения вручную.
     
-*   Skipping Existing Emojis
+*   Пропуск существующих эмодзи
     
-    This script has been updated to check for existing custom emojis on your Rocket.Chat server before uploading new ones. If an emoji from the YAML file is already present on the server, the script will skip uploading that emoji and print a message to inform you that it has been skipped. This helps to prevent duplicate emojis from being uploaded if you run the script multiple times using the same YAML file.
+    Скрипт был обновлен, чтобы проверять наличие пользовательских эмодзи в Rocket.Chat-сервер перед загрузкой новых эмодзи. Если эмодзи из файла YAML уже присутствует на сервере, скрипт пропустит загрузку этого эмодзи и информирует вас о том, что оно было пропущено. Это помогает предотвратить загрузку повторяющихся эмодзи, если вы запускаете скрипт несколько раз, используя один и тот же YAML-файл.
 
-Requirements
+Требования
 ------------
 
 *   Node.js
-*   npm (usually comes with Node.js)
-*   A Rocket.Chat instance with admin access
+*   npm (обычно идет с Node.js)
+*   Rocket.Chat чата с правами администратора
 
-Dependencies
+Зависимости
 ------------
 
-The following Node.js packages are used in this script:
+Скрипт Node.js использует следующее значения:
 
-*   `request`: To perform HTTP requests and interact with the Rocket.Chat API
-*   `js-yaml`: To parse YAML files
-*   `readline`: To read user inputs from the command line
-*   `dotenv`: To load environment variables from a `.env` file
+*   `request`: Для выполнения HTTP-запросов и взаимодействия с Rocket.Chat API
+*   `js-yaml`: Для поиска YAML files
+*   `readline`: Для чтения пользовательских данных, вводимых из командной строки
+*   `dotenv`: Для загрузки переменные из файла `.env`
 
 Installation
 ------------
 
-1.  Clone this repository:
+1.  Клонировать этот репозиторий:
     
     ```bash
-    git clone https://github.com/anefzaoui/rocketchat-emoji-bulk-upload.git
+    git clone https://github.com/koloy910/emoji.git
     cd rocketchat-emoji-bulk-upload
     ```
     
-2.  Install the required dependencies:
+2.  Установите необходимые зависимости:
     
     `npm install`
 
 Usage
 -----
 
-1.  Optionally, create a `.env` file in the project directory with the following content:
+1.  При необходимости создайте файл `.env` в каталоге проекта со следующим содержимым:
     
 
     ```ini
@@ -86,23 +78,23 @@ Usage
     ADMIN_PASSWORD=your-admin-password
     ```
     
-    Replace the placeholder values with your actual Rocket.Chat server URL, admin username, and password. The script will use these values if they are set in the `.env` file, otherwise, it will prompt the user to input them.
+    Замените значения на ваши настоящие Rocket.Chat URL-адрес , имя пользователя и пароль администратора. Скрипт будет использовать эти значения, если они заданы в файле `.env`, в противном случае он предложит пользователю ввести их.
 
-    **Note**: There is a `.env.example` file included in this repository that you can use as a template. Simply rename it to `.env` and fill in your information.
+   **Примечание **: В этом репозитории есть файл ".env.example", который вы можете использовать в качестве шаблона. Просто переименуйте его в `.env` и введите свою информацию.
 
     
-2.  Run the script:
+2.  Запускаем скрипт:
     
     `node import-custom-emojis.js`
     
-3.  If you haven't provided the necessary information in the `.env` file, follow the prompts and provide the required information:
+3.  Если вы не указали необходимую информацию в файле `.env`, следуйте инструкциям и укажите требуемую информацию:
     
     *   URL for the YAML file containing the custom emojis
     *   Rocket.Chat server URL
     *   Rocket.Chat admin username
     *   Rocket.Chat admin password
 
-The script will then fetch the YAML file, parse it, and start downloading and uploading the custom emojis to your Rocket.Chat instance. The process may take some time, depending on the number of custom emojis and their file sizes. After all emojis are uploaded, the script will display a success message.
+Затем скрипт получит файл YAML, проанализирует его и начнет загрузку пользовательских эмодзи в ваш Rocket.Chat. Процесс может занять некоторое время, в зависимости от количества пользовательских эмодзи и размера их файлов. После того, как все эмодзи будут загружены, скрипт выдаст сообщение об успешном завершении.
 
 Emoji Packs
 ------------
@@ -159,17 +151,25 @@ Emoji packs from [slackmojis.com](http://www.slackmojis.com)
 *   [Turntable.fm](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/slackmojis-turntable.fm.yaml)
 *   [Yoyo](https://raw.githubusercontent.com/lambtron/emojipacks/master/packs/slackmojis-yoyo.yaml)
 
-Contributing
+Вклад
 ------------
 
-If you'd like to contribute to this project, feel free to submit a pull request or open an issue. Your feedback and suggestions are always welcome!
+Если вы хотите внести свой вклад в этот проект, не стесняйтесь отправлять запрос на доработку или открывать проблему. Мы всегда рады вашим отзывам и предложениям!
 
-License
+Лицензия
 -------
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+Этот проект лицензирован по лицензии MIT. Подробности смотрите в файле `ЛИЦЕНЗИЯ`
 
-Disclaimer
+Дисклеймер
 ----------
+Данный скрипт Вы используйте  на свой страх и риск. Всегда делайте резервную копию своих данных, прежде чем вносить какие-либо изменения в свой Rocket.Chat сервер.
 
-This script is provided as-is, with no guarantees or warranties. Use it at your own risk. Always make a backup of your data before making any changes to your Rocket.Chat instance.
+git clone https://github.com/anefzaoui/rocketchat-emoji-bulk-upload.git - установка скрипта  
+cd rocketchat-emoji-bulk-upload - переход в папку со скриптом
+npm install - установка зависимости
+ROCKETCHAT_SERVER_URL=https://your-rocketchat-server-url 
+ADMIN_USERNAME=your-admin-username
+ADMIN_PASSWORD=your-admin-password
+в папку .env
+node import-custom-emojis.js - запуск скрипта
