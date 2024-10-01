@@ -8,7 +8,7 @@ Rocket.Chat Пользовательский импортер эмодзи
 --------
 
 1.git clone https://github.com/koloy910/emoji.git - установка скрипта  
-2.cd rocketchat-emoji-bulk-upload - переход в папку со скриптом
+2.cd emoji - переход в папку со скриптом
 3.npm install - установка зависимости
 4.Добавить значения в папку .env
 ROCKETCHAT_SERVER_URL=https://your-rocketchat-server-url 
