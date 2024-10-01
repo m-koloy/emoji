@@ -23,9 +23,9 @@ ADMIN_PASSWORD=your-admin-password
     
     Скрипт позволяет легко импортировать пользовательские эмодзи из удаленного файла YAML, указав URL-адрес файла. Файл YAML должен содержать названия эмодзи и источники изображений в хорошо структурированном формате.
     
-*   Uses the Rocket.Chat API for easy and secure integration
+*   Использует Rocket.Chat-API для простой и безопасной интеграции
     
-    This script interacts with your Rocket.Chat server using the official API, ensuring a secure and straightforward integration process. You will need to provide your admin username and password to authenticate with the API.
+    Этот скрипт взаимодействует с вашим Rocket.Chat - сервер использует официальный API, что обеспечивает безопасный и простой процесс интеграции. Для аутентификации с помощью API вам потребуется ввести имя пользователя и пароль администратора.
     
 *   Использует Rocket.Chat-API для простой и безопасной интеграции
     
