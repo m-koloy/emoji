@@ -6,7 +6,7 @@ Rocket.Chat Пользовательский импортер эмодзи
 Инстуркция 
 --------
 
-*  git clone https://github.com/koloy910/emoji.git - установка скрипта  
+*  git clone https://github.com/m-koloy/emoji.git - установка скрипта  
 *  cd emoji - переход в папку со скриптом
 *  npm install - установка зависимости
 *  Добавить значения в папку .env
@@ -14,7 +14,7 @@ ROCKETCHAT_SERVER_URL=https://your-rocketchat-server-url
 ADMIN_USERNAME=your-admin-username
 ADMIN_PASSWORD=your-admin-password
 *  node import-custom-emojis.js - запуск скрипта
-*  https://raw.githubusercontent.com/koloy910/emoji/refs/heads/main/School21.yaml - указать URL файла yaml с ссылками на эмодзи и названиями 
+*  https://raw.githubusercontent.com/m-koloy/emoji/refs/heads/main/School21.yaml - указать URL файла yaml с ссылками на эмодзи и названиями 
 
 Особенности
 --------
@@ -70,7 +70,7 @@ Installation
 1.  Клонировать этот репозиторий:
     
     ```bash
-    git clone https://github.com/koloy910/emoji.git
+    git clone https://github.com/m-koloy/emoji.git
     cd rocketchat-emoji-bulk-upload
     ```
     
